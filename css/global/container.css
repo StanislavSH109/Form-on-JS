@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 600px;
+    background-color: #F4F6FA;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.page-content {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Task 1</title>
+</head>
+<body>
+    <div class="page-content">
+        <div class="container">
+            <div class="wrapper">
+                <div class="form-content">
+                    <h1 class="form-content__title">
+                        Форма опроса
+                    </h1>
+                    <form  class="form" method="get" id="form">
+                        <label>
+                            <span>Имя пользователя:</span>
+                            <input type="text" name="Имя пользователя" id="" placeholder="Name" class="input input-name">
+                        </label>
+                        <label>
+                            <span>Email пользователя:</span>
+                            <input type="email" name="Email" id="" placeholder="Email" class="input input-email">
+                        </label>
+                        <label>
+                         Пол:
+                         <input type="radio" name="Пол" value="Мужской" id="radio">
+                         Мужской
+                         <input type="radio" name="Пол" value="Женский" id="radio-female">
+                         Женский
+                        </label>
+                        <label>
+                            Качество сервиса:
+                            <input class="range" id="range-nums" type="range" name="Оценка качества" min="0" max="10" step="1">
+                            <p>
+                                Оценка:
+                                <output id="service"></output>
+                            </p>
+                        </label>
+                        <label class="interests">
+                            Интересы пользователя:
+                            <div class="checkbox-wrapper">
+                                <div class="checkbox-inner">
+                                    <input type="checkbox" name="interest" value="Спорт" id="sport">
+                                    <input type="checkbox" name="interest" value="Музыка">
+                                    <input type="checkbox" name="interest" value="Путешествия">
+                                    <input type="checkbox" name="interest" value="Фильмы">
+                                </div>
+                                <div class="interests-inner">
+                                    <span class="interests-check">Спорт</span>
+                                    <span class="interests-check">Музыка</span>
+                                    <span class="interests-check">Путешествия</span>
+                                    <span class="interests-check">Фильмы</span>
+                                </div>
+                            </div>
+                        </label>
+                        <label>
+                            <span class="commentary">Дополнительные комментарии:</span>
+                            <textarea id="review" class="input input-commentary" name="Дополнительные комментарии"></textarea>
+                        </label>
+                        <button type="submit" class="form-btn">Отправить</button>
+                    </form>
+                </div>
+                <div class="result"></div>
+            </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
